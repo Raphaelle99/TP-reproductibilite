@@ -122,18 +122,28 @@ set.seed(973)
 
 # Introduction
 
-Les forêts tropicales primaires sont des écosystèmes complexe avec une diversité d'espèces très importantes.
-Cependant, celles-ci font de plus en plus face au pression anthropique (@Gibson2011).
-Ces systèmes sont très difficile à comprendre particulièrement les mécanismes régissant la biodiversité (@Wright2002b).
+Les forêts tropicales primaires figurent parmi les écosystèmes les plus riches en biodiversité.
+Pourtant, elles sont soumises à des pressions anthropiques croissantes qui menacent leur intégrité écologique [@Gibson2011].
+Les mécanismes à l'origine de cette biodiversité demeurent toutefois complexes et encore méconnus [@Wright2002b].
+À l'échelle mondiale, la richesse spécifique des arbres augmente à mesure que l'on se rapproche de l'équateur, soulignant le rôle majeur du gradient latitudinal dans la structuration de la diversité des forêts tropicales [@Liang2022].
 
-Des modèles ont été publiés [@Liang2022].
+Par ailleurs, les effets du changement climatique s'ajoutent aux perturbations d'origine humaine.
+Bien que la richesse spécifique globale semble relativement stable à l'échelle du continent sud-américain, cette stabilité masque d'importants déclins régionaux.
+Les forêts exposées à des conditions plus chaudes, plus sèches et caractérisées par une saisonnalité accrue connaissent notamment une diminution rapide de leur diversité végétale [@Fadrique2026].
 
-A l'heure des menaces sur la biodiversité [@Fadrique2026], une connaissance plus détaillée de la diversité des forêts très étudiées est utile.
+L'anthropisation des paysages contribue également à la fragmentation des forêts tropicales, transformant progressivement ces dernières en « îles de verdure ».
+Dans ce contexte, la théorie de la biogéographie insulaire développée par @MacArthur1967 établit que la richesse spécifique résulte d'un équilibre dynamique entre les taux d'immigration et d'extinction, ce dernier étant fortement influencé par la superficie de l'île.
+Toutefois, la diversité observée dans les fragments forestiers dépend également de leur histoire de perturbation et de leur stade de succession.
 
-BCI est une forêt secondarisée [@Raby2017].
-Sa diversité pourrait être augmentée selon la théorie de la perturbation intermédiaire [@Connell1978].
+L'île de Barro Colorado (BCI), au Panama, constitue un exemple emblématique de forêt secondaire mature [@Raby2017].
+Selon la théorie de la perturbation intermédiaire [@Connell1978], son niveau actuel de diversité pourrait être maintenu, voire favorisé, par les perturbations passées qu'elle a subies.
+Dès lors, il apparaît pertinent de comparer la dynamique écologique de telles forêts anciennement perturbées à celle de forêts primaires relativement peu affectées par les activités humaines, comme le site de Paracou en Guyane française [@Gourlet-Fleury2004].
+Cette étude vise ainsi à évaluer et à mettre en contraste les caractéristiques de la biodiversité des forêts de Barro Colorado et de Paracou.
 
-Le but de cette étude est de comparer la diversité de la forêt de Paracou (@Gourlet-Fleury2004) avec celle de l'île de Barro Colorado (@Raby2017).
+- A l'heure des menaces sur la biodiversité [@Fadrique2026], une connaissance plus détaillée de la diversité des forêts très étudiées est utile.
+
+- BCI est une forêt secondarisée [@Raby2017].
+  Sa diversité pourrait être augmentée selon la théorie de la perturbation intermédiaire [@Connell1978].
 
 # Matériel et méthode
 
