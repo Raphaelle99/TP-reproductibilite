@@ -92,6 +92,8 @@ paracou6 %>%
   autoplot()
 ```
 
+A zero (=richesse spécifique) ça montre combien il y a d'espèces au total, à 1 ça montre l'indice de Shannon donc ici y'a 110 espèces qui sont réparties équitablement, et à 2 ça représente l'inverse de l'indice de Simpson donc ici il y a 48 espèces qui sont largement abondantes/dominantes
+
 ### BCI
 
 ```{r}
@@ -123,6 +125,10 @@ paracou6 %>%
   # Titre de la légende
   labs(color = "Forêt", linetype = "Forêt")
 ```
+
+Paracou : bcp d'espèces rares mais grosse chute alors quelques espèces dominante et du coup peut d'quitabilité entre les espèces donc abondance très variable en fnction des espèces
+
+BCI : un peu moins d'epèces rare et un peu moins d'espèces dominantes mais plus d'équitabilité entre espèces
 
 ## Références pour l'introduction et la discussion
 
