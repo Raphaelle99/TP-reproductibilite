@@ -1,5 +1,5 @@
 ---
-title: "Demo Stylish Article"
+title: "TP Reproductibilité"
 # Output formats
 format:
   stylisharticle-pdf:
@@ -196,7 +196,9 @@ Les analyses sont réalisées avec R [@R] et le package divent [@Marcon2026a].
 
 # Résultats
 
+::: {#Profiles}
 ```{r}
+#| label: Profiles
 paracou6 %>% 
   # Vecteur des noms d'espèce de chaque arbre
   pull(spName) %>% 
@@ -213,8 +215,13 @@ paracou6 %>%
   # Figure
   autoplot() +
   # Titre de la légende
-  labs(color = "Forêt", linetype = "Forêt")
+  labs(color = "Forêt", linetype = "Forêt") +
+  theme(legend.position = "none")
 ```
+
+**Figure 1.** Profils de diversité de Paracou parcelle 6 (courbe bleu) et BCI (courbe rouge).
+La figure représente le nombre effecctif d'espèces (nombre de Hill) en fonction de l'ordre de la diversité).
+:::
 
 # Discussion
 
