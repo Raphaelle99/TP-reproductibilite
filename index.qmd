@@ -143,7 +143,7 @@ Les analyses sont réalisées avec R [@R] et le package divent [@Marcon2026a].
 1\) Site d'étude
 
 L'étude s'est déroulée dans deux forêts tropicales sur deux sites présents en Amérique centrale.
-Le premier en Guyane française à Paracou et le second dans la forêt de Barro Colorado
+Le premier en Guyane française à Paracou et le second dans la forêt de Barro Colorado Island.
 
 ```{r}
 #| label: Paracou
