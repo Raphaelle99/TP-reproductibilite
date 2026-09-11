@@ -122,21 +122,18 @@ set.seed(973)
 
 # Introduction
 
-La question de la diversité des forêts tropicales fascine les écologues parce qu'elle a des enjeux très importants [@Gibson2011].
-est qu'elle est difficile à comprendre [@Wright2002b].
+Les forêts tropicales primaires sont des écosystèmes complexe avec une diversité d'espèces très importantes.
+Cependant, celles-ci font de plus en plus face au pression anthropique (@Gibson2011).
+Ces systèmes sont très difficile à comprendre particulièrement les mécanismes régissant la biodiversité (@Wright2002b).
 
 Des modèles ont été publiés [@Liang2022].
 
 A l'heure des menaces sur la biodiversité [@Fadrique2026], une connaissance plus détaillée de la diversité des forêts très étudiées est utile.
 
-@MacArthur1967 montrent mathématiquement que la richesse spécifique (le nombre d'espèces) d'une île est un équilibre dynamique entre le taux d'immigration et le taux d'extinction, ce dernier étant directement dicté par la taille de l'île.
-
 BCI est une forêt secondarisée [@Raby2017].
 Sa diversité pourrait être augmentée selon la théorie de la perturbation intermédiaire [@Connell1978].
 
-Comparer la diversité de Paracou [@Gourlet-Fleury2004] et de BCI [@Raby2017].
-
-Les analyses sont réalisées avec R [@R] et le package divent [@Marcon2026a].
+Le but de cette étude est de comparer la diversité de la forêt de Paracou (@Gourlet-Fleury2004) avec celle de l'île de Barro Colorado (@Raby2017).
 
 # Matériel et méthode
 
@@ -174,6 +171,8 @@ BCI %>%
   BCI_50ha
 ```
 
+Les analyses sont réalisées avec R [@R] et le package divent [@Marcon2026a].
+
 # Résultats
 
 ```{r}
@@ -198,3 +197,5 @@ paracou6 %>%
 ```
 
 # Discussion
+
+@MacArthur1967 montrent mathématiquement que la richesse spécifique (le nombre d'espèces) d'une île est un équilibre dynamique entre le taux d'immigration et le taux d'extinction, ce dernier étant directement dicté par la taille de l'île.
