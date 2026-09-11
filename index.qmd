@@ -140,17 +140,22 @@ Selon la théorie de la perturbation intermédiaire [@Connell1978], son niveau a
 Dès lors, il apparaît pertinent de comparer la dynamique écologique de telles forêts anciennement perturbées à celle de forêts primaires relativement peu affectées par les activités humaines, comme le site de Paracou en Guyane française [@Gourlet-Fleury2004].
 Cette étude vise ainsi à évaluer et à mettre en contraste les caractéristiques de la biodiversité des forêts de Barro Colorado et de Paracou.
 
-- A l'heure des menaces sur la biodiversité [@Fadrique2026], une connaissance plus détaillée de la diversité des forêts très étudiées est utile.
-
-- BCI est une forêt secondarisée [@Raby2017].
-  Sa diversité pourrait être augmentée selon la théorie de la perturbation intermédiaire [@Connell1978].
-
 # Matériel et méthode
 
 1\) Site d'étude
 
-L'étude s'est déroulée dans deux forêts tropicales sur deux sites présents en Amérique centrale.
-Le premier en Guyane française à Paracou et le second dans la forêt de Barro Colorado Island.
+Cette étude a été réalisée sur deux sites forestiers tropicaux de référence situés en Amérique tropicale : la station de recherche de Paracou en Guyane française et l'île de Barro Colorado (BCI) au Panama.
+Ces deux sites appartiennent au réseau de parcelles forestières permanentes les plus suivies au monde et constituent des observatoires privilégiés pour l'étude de la dynamique, de la structure et de la diversité des forêts tropicales.
+
+- Site de Paracou
+
+La station expérimentale forestière de Paracou est située près de Sinnamary, en Guyane française, à environ 50 km de Kourou.
+Elle est implantée dans une forêt tropicale humide de basse altitude représentative du Bouclier guyanais.
+Ce site de recherche a été créé au début des années 1980 afin d'étudier les effets de différentes pratiques sylvicoles sur le fonctionnement et la dynamique des forêts tropicales.
+
+Le dispositif comprend un ensemble de parcelles permanentes couvrant environ 120 ha et permettant le suivi à long terme d'environ 70 000 arbres.
+La forêt de Paracou se caractérise par une très forte richesse spécifique, avec plus de 750 espèces d'arbres recensées pour les individus de diamètre supérieur ou égal à 10 cm.
+Les recherches menées sur le site concernent notamment la dynamique forestière, la biodiversité, les cycles biogéochimiques, la séquestration du carbone et la réponse des écosystèmes aux perturbations naturelles ou anthropiques.
 
 ```{r}
 #| label: Paracou
@@ -158,9 +163,16 @@ library("tidyverse")
 paracou6 <- read_csv2("data/Paracou6.csv")
 ```
 
-- Présentation du site de BCI
+- Site de l'île de Barro Colorado
 
-Les données sont dans le package *vegan* [@Oksanen2012].
+Barro Colorado Island (BCI) est située au centre du lac Gatún, dans la zone du canal de Panama.
+L'île a été formée en 1914 lors de la création du lac artificiel consécutive au barrage du fleuve Chagres.
+Elle constitue aujourd'hui l'un des sites les plus étudiés au monde pour l'écologie des forêts tropicales.
+
+BCI est recouverte d'une forêt tropicale humide de basse altitude protégée depuis plus d'un siècle.
+Le site bénéficie d'un climat caractérisé par une saison sèche marquée, de décembre à avril, et une saison des pluies de mai à décembre, avec des précipitations annuelles moyennes d'environ 2 600 mm.
+Depuis 1980, une parcelle permanente de 50 ha fait l'objet d'inventaires répétés permettant le suivi de plusieurs centaines d'espèces d'arbres.
+Cette parcelle constitue une référence mondiale pour l'étude de la dynamique des communautés végétales tropicales et des mécanismes contrôlant la biodiversité.
 
 ```{r}
 #| label: BCI
@@ -169,7 +181,6 @@ data(BCI)
 ```
 
 ```{r}
-#| label: BCI 
 library("divent")
 BCI %>% 
   # Création d'un objet "abundances"
@@ -186,7 +197,6 @@ Les analyses sont réalisées avec R [@R] et le package divent [@Marcon2026a].
 # Résultats
 
 ```{r}
-#| label: Paracou
 paracou6 %>% 
   # Vecteur des noms d'espèce de chaque arbre
   pull(spName) %>% 
@@ -208,4 +218,12 @@ paracou6 %>%
 
 # Discussion
 
-@MacArthur1967 montrent mathématiquement que la richesse spécifique (le nombre d'espèces) d'une île est un équilibre dynamique entre le taux d'immigration et le taux d'extinction, ce dernier étant directement dicté par la taille de l'île.
+L’analyse comparative des profils de diversité de Hill apporte un éclairage empirique crucial aux théories écologiques.
+En révélant une diversité largement supérieure à Paracou par rapport à BCI, quel que soit l'ordre (q), nos résultats confirment la valeur conservatoire des forêts primaires de terre ferme face aux écosystèmes insularisés ou perturbés [@Gibson2011; @Gourlet-Fleury2004].
+La pente particulièrement marquée observée à Paracou entre (q=0) (richesse) et (q=1) (Shannon) traduit une forte concentration d'espèces rares et une distribution asymétrique des abondances.
+Cette structure est caractéristique des forêts tropicales mûres hautement diversifiées, où les mécanismes de coexistence maintiennent une multitude de taxons à de faibles densités [@Wright2002b].
+À l'inverse, la pente plus douce et l'équitabilité supérieure affichées par BCI s'expliquent doublement par son histoire et sa géographie.
+D'une part, en tant que forêt secondarisée, la relative bonne répartition de ses espèces valide l'application de la théorie de la perturbation intermédiaire [@Connell1978] : les perturbations anthropiques historiques ont pu niveler la dominance de certaines espèces climaciques au profit d'une communauté transitoire plus homogène.
+D'autre part, son statut de fragment insulaire la soumet inévitablement à la théorie de la biogéographie insulaire [@MacArthur1967].
+L'isolement géographique de BCI et sa taille restreinte induisent un taux d'extinction plus élevé et un blocage de l'immigration continentale, ce qui explique un plafond de richesse spécifique ((q=0)) nettement inférieur à celui de Paracou.
+Alors que les changements globaux actuels menacent la biodiversité en fragmentant les habitats [@Fadrique2026], notre étude démontre que si les perturbations intermédiaires ou l'insularité redistribuent les abondances de manière plus équitable (comme à BCI), elles ne permettent pas d'atteindre la complexité structurelle et le réservoir d'espèces rares des forêts non anthropisées (comme à Paracou).
